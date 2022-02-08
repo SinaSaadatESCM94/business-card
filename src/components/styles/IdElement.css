@@ -1,0 +1,177 @@
+:root {
+  --body-bg: #23252c;
+  --card-bg: #f5f5f5;
+  --text-header1: #2b283a;
+  --text-header2: #f47d27;
+  --text-content: #4a4e74;
+  --footer-bg: #d5d4d8;
+  --footer-text: #918e9b;
+  --email-bg: #ffffff;
+  --email-txt: #374151;
+  --email-icon: #1e1f26;
+  --linkedin-bg: #297fe5;
+  --linkedin-txt: #ffffff;
+  --linkedin-icon: #ffffff;
+  --pad-h: 30px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #23252c;
+    --card-bg: #1a1b21;
+    --text-header1: #f5f5f5;
+    --text-header2: #f3bf99;
+    --text-content: #dcdcdc;
+    --footer-bg: #161619;
+    --footer-text: #918e9b;
+    --email-bg: #ffffff;
+    --email-txt: #374151;
+    --email-icon: #1e1f26;
+    --linkedin-bg: #297fe5;
+    --linkedin-txt: #ffffff;
+    --linkedin-icon: #ffffff;
+    --pad-h: 30px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.id--info {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.id--info .img-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.id--info .img-container img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.id--info .id-container {
+  width: 100%;
+  height: auto;
+  padding: 0px var(--pad-h);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 30px;
+}
+
+.id--info .id-container h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-header1);
+}
+
+.id--info .id-container h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-header2);
+}
+
+.id--info .id-container h3 {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-content);
+}
+
+.id--info .id-container h3 a {
+  text-decoration: none;
+}
+
+.id--info .btn-container {
+  width: 100%;
+  height: auto;
+  padding: 0px var(--pad-h);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+}
+
+.id--info .btn-container a {
+  width: 40%;
+  height: 34px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.id--info .btn-container a.email {
+  background-color: var(--email-bg);
+}
+
+.id--info .btn-container a.email .icon {
+  color: var(--email-icon);
+}
+
+.id--info .btn-container a.email p {
+  color: var(--email-txt);
+}
+
+.id--info .btn-container a.linkedIn {
+  background-color: var(--linkedin-bg);
+}
+
+.id--info .btn-container a.linkedIn .icon {
+  color: var(--linkedin-icon);
+}
+
+.id--info .btn-container a.linkedIn p {
+  color: var(--linkedin-txt);
+}
+/*# sourceMappingURL=IdElement.css.map */

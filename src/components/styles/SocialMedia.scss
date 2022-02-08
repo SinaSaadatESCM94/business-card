@@ -1,0 +1,63 @@
+:root {
+	--body-bg: #23252c;
+	--card-bg: #f5f5f5;
+	--text-header1: #2b283a;
+	--text-header2: #f47d27;
+	--text-content: #4a4e74;
+	--footer-bg: #d5d4d8;
+	--footer-text: #918e9b;
+	--email-bg: #ffffff;
+	--email-txt: #374151;
+	--email-icon: #1e1f26;
+	--linkedin-bg: #297fe5;
+	--linkedin-txt: #ffffff;
+	--linkedin-icon: #ffffff;
+	--pad-h: 30px;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--body-bg: #23252c;
+		--card-bg: #1a1b21;
+		--text-header1: #f5f5f5;
+		--text-header2: #f3bf99;
+		--text-content: #dcdcdc;
+		--footer-bg: #161619;
+		--footer-text: #918e9b;
+		--email-bg: #ffffff;
+		--email-txt: #374151;
+		--email-icon: #1e1f26;
+		--linkedin-bg: #297fe5;
+		--linkedin-txt: #ffffff;
+		--linkedin-icon: #ffffff;
+		--pad-h: 30px;
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+footer {
+	width: 100%;
+	height: auto;
+	padding: var(--pad-h) var(--pad-h);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: var(--footer-bg);
+	border-radius: 0px 0px 10px 10px;
+
+	a {
+		text-decoration: none;
+		color: var(--footer-text);
+		transition: all 0.2s ease;
+		.icon {
+			font-size: 25px;
+		}
+
+		&:hover {
+			color: var(--text-header1);
+			transition: all 500ms ease;
+		}
+	}
+}
